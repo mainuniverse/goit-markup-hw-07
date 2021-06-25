@@ -23,25 +23,25 @@
   <body>
     <!-- Header -->
     <header class="page-header">
-      <nav class="container nav">
-        <a href="#" class="logo">Web<span class="logo-part">Studio</span></a>
-        <ul class="site-nav list">
-          <li class="item"><a href="./index.html" class="link">Студия</a></li>
-          <li class="item"><a href="#" class="link current">Портфолио</a></li>
-          <li class="item"><a href="#" class="link">Контакты</a></li>
+      <nav class="container header__nav">
+        <a href="#" class="logo">Web<span class="header__logo">Studio</span></a>
+        <ul class="header__list list">
+          <li class="header__item"><a href="#" class="link current">Студия</a></li>
+          <li class="header__item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+          <li class="header__item"><a href="#" class="link">Контакты</a></li>
         </ul>
-        <ul class="list auth-nav">
-          <li class="item-nav">
-            <svg class="icons-nav link" width="16" height="20">
+        <ul class="header__contacts list">
+          <li class="header__details">
+            <svg class="header__icons link" width="16" height="20">
               <use href="./images/symbol-defs.svg#icon-envelope"></use>
             </svg>
-            <a href="mailto:info@devstudio.com" class="link tel-mail"> info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link header__link"> info@devstudio.com</a>
           </li>
-          <li class="item-nav">
-            <svg class="icons-nav link" width="16" height="16">
+          <li class="header__details">
+            <svg class="header__icons link" width="16" height="16">
               <use href="./images/symbol-defs.svg#icon-smartphone"></use>
             </svg>
-            <a href="tel:+380961111111" class="link tel-mail">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link header__link">+38 096 111 11 11</a>
           </li>
         </ul>
       </nav>
@@ -54,70 +54,68 @@
           <h1 class="visually-hidden">Портфолио</h1>
           <h2 class="visually-hidden">Кнопки</h2>
           <ul class="list btn-container">
-            <li class="btn-list">
-              <button type="button" class="button btn btn-current">Все</button>
-            </li>
-            <li class="btn-list"><button type="button" class="button btn">Веб-сайты</button></li>
-            <li class="btn-list"><button type="button" class="button btn">Приложения</button></li>
-            <li class="btn-list"><button type="button" class="button btn">Дизайн</button></li>
-            <li class="btn-list"><button type="button" class="button btn">Маркетинг</button></li>
+            <li class="portfolio__btn"><button type="button" class="btn">Все</button> </li>
+            <li class="portfolio__btn"><button type="button" class="btn">Веб-сайты</button></li>
+            <li class="portfolio__btn"><button type="button" class="btn">Приложения</button></li>
+            <li class="portfolio__btn"><button type="button" class="btn">Дизайн</button></li>
+            <li class="portfolio__btn"><button type="button" class="btn">Маркетинг</button></li>
           </ul>
-          <ul class="list projects-container">
+          <ul class="list projects__container">
             <li class="projects">
-              <div class="project-overlay">
-                <img src="images/portfolio.jpg" alt="Веб-сайт Технокряк" width="370" />
-                <p class="project-info">
+              <div class="project__overlay">
+                <img src="images/portfolio/portfolio.jpg" alt="Веб-сайт Технокряк" width="370" />
+                <p class="project__info">
                   Технокряк это современная площадка распространения коронавируса. Компании
                   используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                   конкурентов.
                 </p>
               </div>
-              <h3 class="web">Технокряк</h3>
-              <p class="web-example">Веб-сайт</p>
+              <h3 class="project__title">Технокряк</h3>
+              <p class="project__example">Веб-сайт</p>
             </li>
             <li class="projects">
-              <img src="images/portfolio1.jpg" alt="Дизайн" width="370" />
-              <h3 class="web">Постер New Orlean vs Golden Star</h3>
-              <p class="web-example">Дизайн</p>
+              <img src="images/portfolio/portfolio1.jpg" alt="Дизайн" width="370" />
+              <h3 class="project__title">Постер New Orlean vs Golden Star</h3>
+              <p class="project__example">Дизайн</p>
             </li>
             <li class="projects">
-              <img src="images/portfolio2.jpg" alt="Приложение" width="370" />
-              <h3 class="web">Ресторан Seafood</h3>
-              <p class="web-example">Приложение</p>
+              <img src="images/portfolio/portfolio2.jpg" alt="Приложение" width="370" />
+              <h3 class="project__title">Ресторан Seafood</h3>
+              <p class="project__example">Приложение</p>
             </li>
             <li class="projects">
-              <img src="images/portfolio3.jpg" alt="Маркетинг" width="370" />
-              <h3 class="web">Проект Prime</h3>
-              <p class="web-example">Маркетинг</p>
+              <img src="images/portfolio/portfolio3.jpg" alt="Маркетинг" width="370" />
+              <h3 class="project__title">Проект Prime</h3>
+              <p class="project__example">Маркетинг</p>
             </li>
             <li class="projects">
-              <img src="images/portfolio4.jpg" alt="Приложение" width="370" />
-              <h3 class="web">Проект Boxes</h3>
-              <p class="web-example">Приложение</p>
+              <img src="images/portfolio/portfolio4.jpg" alt="Приложение" width="370" />
+              <h3 class="project__title">Проект Boxes</h3>
+              <p class="project__example">Приложение</p>
             </li>
             <li class="projects">
               <img
-                src="images/portfolio5.jpg"
+                src="images/portfolio/portfolio5.jpg"
                 alt="Веб-сайт Inspiration has no Borders"
                 width="370"
               />
-              <h3 class="web">Inspiration has no Borders</h3>
-              <p class="web-example">Веб-сайт</p>
+              <h3 class="project__title">Inspiration has no Borders</h3>
+              <p class="project__example">Веб-сайт</p>
             </li>
             <li class="projects">
-              <img src="images/portfolio6.jpg" alt="Дизайн" width="370" />
-              <h3 class="web">Издание Limited Edition</h3>
-              <p class="web-example">Дизайн</p>
+              <img src="images/portfolio/portfolio6.jpg" alt="Дизайн" width="370" />
+              <h3 class="project__title">Издание Limited Edition</h3>
+              <p class="project__example">Дизайн</p>
             </li>
             <li class="projects">
-              <img src="images/portfolio7.jpg" alt="Маркетинг Проект LAB" width="370" />
-              <h3 class="web">Проект LAB</h3>
-              <p class="web-example">Маркетинг</p>
+              <img src="images/portfolio/portfolio7.jpg" alt="Маркетинг Проект LAB" width="370" />
+              <h3 class="project__title">Проект LAB</h3>
+              <p class="project__example">Маркетинг</p>
             </li>
             <li class="projects">
-              <img src="images/portfolio8.jpg" alt="Приложение Growing Business" width="370" />
-              <h3 class="web">Growing Business</h3>
-              <p class="web-example">Приложение</p>
+              <img src="images/portfolio/portfolio8.jpg" alt="Приложение Growing Business" width="370" />
+              <h3 class="project__title">Growing Business</h3>
+              <p class="project__example">Приложение</p>
             </li>
           </ul>
         </div>
@@ -125,68 +123,68 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="adress-container">
-          <a href="#" class="logo">Web<span class="logo-footer">Studio</span></a>
-          <address class="address">
+      <div class="container footer__container">
+        <div class="footer__details">
+          <a href="#" class="logo">Web<span class="footer__logo">Studio</span></a>
+          <address class="footer__contacts">
             <ul class="list">
-              <li class="address-items">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="footer__address">г. Киев, пр-т Леси Украинки, 26</li>
               <li>
-                <a href="mailto:info@devstudio.com" class="address tel-mail">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="footer__link">info@devstudio.com</a>
               </li>
-              <li><a href="tel:+380961111111" class="address tel-mail">+38 096 111 11 11</a></li>
+              <li><a href="tel:+380961111111" class="footer__link">+38 096 111 11 11</a></li>
             </ul>
           </address>
         </div>
-        <div class="social-footer">
-          <a href="#" class="connect">присоединяйтесь</a>
-          <ul class="list social-container">
-            <li class="social-list-footer">
-              <a href="#" class="social-links-footer">
-                <svg class="social-icons-footer" width="44" height="44">
+        <div class="">
+          <a href="#" class="footer__connect">присоединяйтесь</a>
+          <ul class="list social__container">
+            <li class="footer__social__list">
+              <a href="#" class="footer__social__link">
+                <svg class="footer__social__icon" width="44" height="44">
                   <use href="images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-footer">
-              <a href="#" class="social-links-footer">
-                <svg class="social-icons-footer" width="44" height="44">
+            <li class="footer__social__list">
+              <a href="#" class="footer__social__link">
+                <svg class="footer__social__icon" width="44" height="44">
                   <use href="images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-footer">
-              <a href="#" class="social-links-footer">
-                <svg class="social-icons-footer" width="44" height="44">
+            <li class="footer__social__list">
+              <a href="#" class="footer__social__link">
+                <svg class="footer__social__icon" width="44" height="44">
                   <use href="images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-footer">
-              <a href="#" class="social-links-footer">
-                <svg class="social-icons-footer" width="44" height="44">
+            <li class="footer__social__list">
+              <a href="#" class="footer__social__link">
+                <svg class="footer__social__icon" width="44" height="44">
                   <use href="images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-          <div class="subscribe">
-            <a href="#" class="connect">Подпишитесь на рассылку</a>
-            <form>
-              <ul class="list social-container">
-                <li class="social-list-footer">
-                  <input type="email" name="email" id="mail" class="form-send" placeholder="E-mail" />
-                </li>
-                <li class="btn-send">
-                  <button type="submit" class="btn btn-submit text-subscribe">Подписаться</button>
-                  <svg class="icon-send" width="24" height="24">
-                    <use href="./images/symbol-defs.svg#icon-send"></use>
-                  </svg>
-                </li>
-              </ul>
-            </form>
-          </div>
+        <div class="footer__subscribe">
+          <a href="#" class="footer__connect">Подпишитесь на рассылку</a>
+          <form>
+            <ul class="list social__container">
+              <li class="footer__social__list">
+                <input type="email" name="email" id="mail" class="footer__subscribe__form" placeholder="E-mail" />
+              </li>
+              <li class="footer__subscribe__btn">
+                <button type="submit" class="btn  footer__subscribe__text">Подписаться</button>
+                <svg class="footer__subscribe__icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </li>
+            </ul>
+          </form>
+        </div>
       </div>
     </footer>
   </body>
