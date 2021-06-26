@@ -30,12 +30,11 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  box-sizing: border-box;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
   width: 30px;
   height: 30px;
+  @extend %displayFlex;
+  box-sizing: border-box;
+  border-radius: 50%;
   outline: none;
   border: none;
   background-color: getColor('whiteColor');
@@ -181,6 +180,12 @@ textarea::placeholder {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  &:checked + .modal__checkbox__icon {
+    fill: getColor('whiteColor');
+    background-color: getColor('accent-color');
+    border: none;
+  }
 }
 .check {
   display: inline-block;
@@ -190,11 +195,6 @@ textarea::placeholder {
   margin-right: 8px;
 }
 
-.checkbox:checked + .modal__checkbox__icon {
-  fill: getColor('whiteColor');
-  background-color: getColor('accent-color');
-  border: none;
-}
 .modal__btn {
   display: flex;
   align-items: center;

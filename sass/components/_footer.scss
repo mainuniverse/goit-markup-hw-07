@@ -65,8 +65,7 @@
 }
 
 .footer__social__link {
-  display: flex;
-  align-items: center;
+  @extend %displayFlex;
   padding: 12px;
   border-radius: 50%;
   fill: getColor('whiteColor');
@@ -112,8 +111,7 @@
 
 .footer__subscribe__btn {
   position: relative;
-  display: flex;
-  align-items: center;
+  @extend %displayFlex;
   margin: 0;
   padding: 0;
   cursor: pointer;

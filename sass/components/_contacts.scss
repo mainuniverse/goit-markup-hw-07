@@ -1,13 +1,11 @@
 .header__contacts {
-  display: flex;
-  align-items: center;
+  @extend %displayFlex;
   padding-top: 32px;
   padding-bottom: 32px;
   margin-left: auto;
 }
 .header__details {
-  display: flex;
-  align-items: center;
+  @extend %displayFlex;
   margin-right: 50px;
   margin-left: auto;
   margin-bottom: 0;
@@ -25,12 +23,12 @@
 }
 
 .header__icons {
+  display: inline-block;
   align-items: center;
   margin-right: 10px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: inline-block;
   stroke-width: 0;
   stroke: currentColor;
 }

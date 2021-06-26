@@ -14,3 +14,21 @@ $colors: (
 @function getColor($key) {
   @return map-get($colors, $key);
 }
+// text
+//$primaryTextColor: #212121;
+$secondaryTextColor: #757575;
+
+//  background
+$secondaryBackgroundColor: #2196f3;
+$otherBackgroundColor: #f5f4fa;
+$socialLinksColor: #afb1b8;
+
+//other colors
+$accent-color: #2196f3;
+$accentColorBackground: #2f303a;
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$btnPrimaryColor: #188ce8;
+$borderColor1: #eeeeee;
+$borderColor2: #ececec;
+// /* getColor('primaryTextColor'); */
