@@ -88,12 +88,7 @@ p {
   border: include bordered(#eeeeee);
 }
 
-.link .header__list {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.header__list .header__item {
+.header__item {
   margin-right: 50px;
   margin-left: auto;
   -webkit-box-align: baseline;
@@ -102,7 +97,7 @@ p {
   margin-bottom: 0;
 }
 
-.header__list .header__item:last-child {
+.header__item:last-child {
   margin-right: 0;
 }
 
@@ -120,11 +115,12 @@ p {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link:hover, .link:focus, .link:active {
-  color: #2196f3;
+.header__list .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.list .header__link {
+.header__link {
   color: #757575;
 }
 
@@ -185,7 +181,9 @@ p {
   margin-right: 0;
 }
 
-.link:hover, .link:focus, .link:active {
+.link:hover,
+.link:focus,
+.link:active {
   color: #2196f3;
 }
 

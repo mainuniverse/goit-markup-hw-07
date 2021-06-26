@@ -9,14 +9,12 @@
 .header__nav {
   @extend %displayFlex;
 }
+
 .header__list {
   @extend %displayFlex;
-  .link & {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
 }
-.header__list .header__item {
+
+.header__item {
   margin-right: 50px;
   margin-left: auto;
   align-items: baseline;
@@ -37,16 +35,14 @@
   margin: 0;
   padding: 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus,
-  &:active {
-    color: getColor('accent-color');
+  .header__list & {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
+
 .header__link {
-  .list & {
-    color: getColor('secondaryTextColor');
-  }
+  color: getColor('secondaryTextColor');
 }
 
 .current {
