@@ -1,0 +1,16 @@
+$colors: (
+  'primaryTextColor': #212121,
+  'secondaryTextColor': #757575,
+  'accent-color': #2196f3,
+  'socialLinksColor': #afb1b8,
+  'accentColorBackground': #2f303a,
+  'whiteColor': #ffffff,
+  'blackColor': #000000,
+  'btnPrimaryColor': #188ce8,
+  'borderColor1': #eeeeee,
+  'borderColor2': #ececec,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

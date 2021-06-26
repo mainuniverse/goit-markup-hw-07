@@ -1,0 +1,36 @@
+.header__contacts {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: auto;
+}
+.header__details {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: auto;
+  margin-bottom: 0;
+  padding: 0;
+  transition: color 50ms cubic-bezier(0.4, 0, 0.2, 1), fill 50ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover,
+  &:active {
+    fill: getColor('accent-color');
+    color: getColor('accent-color');
+  }
+}
+
+.header__icons {
+  align-items: center;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+}
