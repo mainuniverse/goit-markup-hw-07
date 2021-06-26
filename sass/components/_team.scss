@@ -17,7 +17,7 @@
 .team__list {
   display: flex;
   margin-top: 50px;
-  flex-basis: calc(100% / 4 - 30px);
+  flex-basis: calc(100% / 4 - #{$gridItemMargin});
   padding-bottom: 30px;
 }
 .team__member {

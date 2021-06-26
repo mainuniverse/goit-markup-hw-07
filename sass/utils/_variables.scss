@@ -1,5 +1,5 @@
 $gridItemMargin: 30px;
-//margin: $gridItemMargin * 2;
+//margin: $gridItemMargin * 2; #{$gridItemMargin}
 
 @mixin bordered($color) {
   border: 1px solid $color;

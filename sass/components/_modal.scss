@@ -1,4 +1,4 @@
-/* Modal */
+// /* Modal */
 .backdrop {
   position: fixed;
   top: 0;
@@ -12,13 +12,13 @@
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
-  background-color: getColor('whiteColor');
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0;
   padding: 0;
+  background-color: getColor('whiteColor');
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -36,15 +36,15 @@
   box-sizing: border-box;
   border-radius: 50%;
   outline: none;
-  border: none;
   background-color: getColor('whiteColor');
-  border: 1px solid getColor('whiteColor');
+  @include bordered($whiteColor);
+  &:hover {
+    @include bordered(#0000001a);
+    fill: getColor('accent-color');
+    cursor: pointer;
+  }
 }
-.modal__btn__close:hover {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  fill: getColor('accent-color');
-  cursor: pointer;
-}
+
 .modal__btn:hover .modal__icon {
   fill: getColor('accent-color');
 }
@@ -100,15 +100,17 @@ input {
   width: 100%;
   display: block;
   height: 40px;
+  &:focus {
+    border-color: getColor('accent-color');
+  }
 }
-.form__nput:focus,
-.form__input-textarea:focus {
-  border-color: getColor('accent-color');
-}
-
 .modal__form__input:focus ~ .modal__icons {
   fill: getColor('accent-color');
 }
+.form__input__textarea:focus {
+  border-color: getColor('accent-color');
+}
+
 .form__name,
 .form__tel,
 .form__mail {
@@ -146,7 +148,7 @@ input {
   line-height: 1.166;
   letter-spacing: 0.01em;
   text-align: left;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  @include bordered(#21212133);
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
@@ -159,9 +161,8 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal__checkbox__field {
-  display: flex;
+  @extend %displayFlex;
   justify-content: center;
-  align-items: center;
   padding-top: 20px;
   padding-bottom: 30px;
 }
@@ -187,7 +188,7 @@ textarea::placeholder {
     border: none;
   }
 }
-.check {
+.modal__checkbox__icon {
   display: inline-block;
   box-sizing: border-box;
   border: 0.5px solid rgba(33, 33, 33, 1);
@@ -196,8 +197,7 @@ textarea::placeholder {
 }
 
 .modal__btn {
-  display: flex;
-  align-items: center;
+  @extend %displayFlex;
   justify-content: center;
 }
 .checkbox-btn {

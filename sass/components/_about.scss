@@ -6,7 +6,7 @@
 }
 .about__list {
   display: flex;
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc(100% / 3 - #{$gridItemMargin});
 }
 .about__item {
   position: relative;

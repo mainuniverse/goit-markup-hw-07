@@ -3,7 +3,7 @@
   text-decoration: none;
   @extend %displayFlex;
   text-align: center;
-  border: 1px solid getColor('borderColor1');
+  border: include bordered($borderColor1);
 }
 
 .header__nav {

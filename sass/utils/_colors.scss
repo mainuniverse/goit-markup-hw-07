@@ -3,6 +3,7 @@ $colors: (
   'secondaryTextColor': #757575,
   'accent-color': #2196f3,
   'socialLinksColor': #afb1b8,
+  'otherBackgroundColor': #f5f4fa,
   'accentColorBackground': #2f303a,
   'whiteColor': #ffffff,
   'blackColor': #000000,
@@ -15,7 +16,7 @@ $colors: (
   @return map-get($colors, $key);
 }
 // text
-//$primaryTextColor: #212121;
+$primaryTextColor: #212121;
 $secondaryTextColor: #757575;
 
 //  background

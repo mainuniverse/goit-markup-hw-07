@@ -11,15 +11,19 @@
   margin-bottom: 0;
   padding: 0;
   transition: color 50ms cubic-bezier(0.4, 0, 0.2, 1), fill 50ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:last-child {
-    margin-right: 0;
-  }
   &:hover,
   &:active {
     fill: getColor('accent-color');
     color: getColor('accent-color');
   }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.link:hover,
+.link:focus,
+.link:active {
+  color: getColor('accent-color');
 }
 
 .header__icons {
