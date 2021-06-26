@@ -30,12 +30,13 @@
   padding-bottom: 27px;
 }
 
-.about__list .about__item {
-  margin-right: 30px;
-  box-shadow: 0px 4px 4px 0px #00000040;
-  border-radius: 4px;
-}
-
-.about__item:last-child {
-  margin-right: 0;
+.about__item {
+  .about__list & {
+    margin-right: 30px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 4px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
 }

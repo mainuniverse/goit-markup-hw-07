@@ -11,12 +11,12 @@
 }
 .header__list {
   @extend %displayFlex;
+  .link & {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
-.header__list .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.header__item {
+.header__list .header__item {
   margin-right: 50px;
   margin-left: auto;
   align-items: baseline;
@@ -43,8 +43,10 @@
     color: getColor('accent-color');
   }
 }
-.list .header__link {
-  color: getColor('secondaryTextColor');
+.header__link {
+  .list & {
+    color: getColor('secondaryTextColor');
+  }
 }
 
 .current {
