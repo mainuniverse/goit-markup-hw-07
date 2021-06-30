@@ -185,7 +185,7 @@ textarea {
   -moz-appearance: none;
   appearance: none;
   &:checked + .modal__checkbox__icon {
-    fill: getColor('whiteColor');
+    fill: #ffffff;
     background-color: getColor('accent-color');
     border: none;
   }
